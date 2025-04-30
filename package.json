@@ -1,0 +1,37 @@
+{
+  "name": "github-actions-ci-cd-setup",
+  "version": "1.0.0",
+  "description": "A project demonstrating GitHub Actions CI/CD setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:ci": "cypress run --component"
+  },
+  "author": "Obi Mazagri",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/jest-dom": "^6.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+} 
