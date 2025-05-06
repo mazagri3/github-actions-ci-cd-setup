@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: github-actions-ci-cd-setup
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    buildFilter:
+      paths:
+        - package.json
+        - package-lock.json
+        - src/**
+        - public/** 

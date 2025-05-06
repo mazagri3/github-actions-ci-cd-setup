@@ -57,4 +57,13 @@ yarn-error.log*
 
 # Cypress
 cypress/videos/
-cypress/screenshots/ 
+cypress/screenshots/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
