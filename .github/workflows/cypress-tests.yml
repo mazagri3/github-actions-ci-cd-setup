@@ -6,10 +6,11 @@ on:
       - develop
 
 jobs:
-  cypress-run:
+  cypress-test:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -18,13 +19,13 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
+      - name: Change to project directory
+        run: cd 20-Deployment-CI-CD/02-Challenge
+
       - name: Install dependencies
         run: npm ci
 
       - name: Run Cypress tests
-        uses: cypress-io/github-action@v5
-        with:
-          start: npm start
-          wait-on: 'http://localhost:3000'
-          browser: chrome
-          headless: true 
+        run: npm run test:ci
+        env:
+          CI: true 

@@ -18,9 +18,9 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "cypress": "^13.6.0",
+    "@testing-library/jest-dom": "^6.1.0",
     "@testing-library/react": "^14.0.0",
-    "@testing-library/jest-dom": "^6.1.0"
+    "cypress": "^13.17.0"
   },
   "browserslist": {
     "production": [
@@ -34,4 +34,4 @@
       "last 1 safari version"
     ]
   }
-} 
+}
